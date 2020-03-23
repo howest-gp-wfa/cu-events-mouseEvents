@@ -1,0 +1,31 @@
+#divCirkel{
+  width: 200px;
+  height: 200px;
+  padding : 40px;
+  background-color : #FFFF99;
+  border-radius: 50%;
+  border : 2px solid black;
+}
+#divInnerCirkel{
+  width: 100px;
+  height: 100px;
+  padding : 50px;
+  background-color : red;
+  border-radius: 50%;
+  border : 2px solid black;
+}
+
+#divFeedback, #divClickZone {
+  margin-right: 15px;
+  float: left;
+}
+
+#divMoveZone {
+  margin-top: 15px;
+  width: 200px;
+  height: 100px;
+  padding : 50px;
+  background-color : green;
+
+  border : 2px solid black;
+}
