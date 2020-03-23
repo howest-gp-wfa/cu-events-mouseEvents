@@ -1,8 +1,6 @@
 "use strict";
 
 var divFeedback, divMoveZone, divCirkel;
-var slcCapture;
-var teller;
 
 window.addEventListener('load',Initieer);
 
@@ -65,22 +63,3 @@ const ShowMouseLeave = (e) => {
   let feedback = `MouseLeave op Plaats: X: ${e.screenX} - Y: ${e.screenY} <br/>`;
   divFeedback.innerHTML += feedback;
 }
-
-function GeefKlik(e){
-  let propagationStopped = 
-    (slcPropagate.options[slcPropagate.selectedIndex].value == 'true');
-    console.log(e.target);
-  divFeedback.innerHTML += `Knopnr: ${e.button}<br/>`;
-  divFeedback.innerHTML += `Getriggered door ${this.id} <br/>`; 
-  divFeedback.innerHTML += `Je klikte op: ${e.target.id} <br/>`; 
-  divFeedback.innerHTML += `Plaats: ${e.screenX} ${e.screenY} <br/>`; 
-  divFeedback.innerHTML += `PlaatsDoc: ${e.pageX} ${e.pageY} <br/>`; 
-  divFeedback.innerHTML += `PlaatsClient: ${e.clientX} ${e.clientY} <br/>`; 
-   if (propagationStopped) e.stopPropagation();
-}
-
-
-
-
-
-
